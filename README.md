@@ -1,16 +1,32 @@
-<<<<<<< HEAD
-# React + Vite
+# 🔐 Stellar Auth Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple React app simulating authentication with:
 
-Currently, two official plugins are available:
+- ✅ Signup + OTP verification
+- 🔐 Login with backup code check
+- ⚙️ Settings menu (view/download backup codes)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+- React + React Router
+- LocalStorage
+- bcrypt.js + CryptoJS
 
-## Expanding the ESLint configuration
+## 🚀 Run Locally
+```bash
+npm install
+npm run dev
+```
+Open: http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# authsignlog
->>>>>>> 446f410cc8d661bdfb4dc8e0bdc4bacc5bd5510b
+📦 Pages
+/signup → register + OTP
+
+/login → login + backup code prompt
+
+/home → welcome + settings (backup codes)
+
+r
+Copier le code
+
+Tu peux copier ce fichier dans un `README.md` à la racine de ton projet ✨  
+Si tu veux l’emoji style pro ou un résumé français, dis-moi !
