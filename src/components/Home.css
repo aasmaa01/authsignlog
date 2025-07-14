@@ -1,0 +1,8 @@
+#verifyPassword {
+  width: 100%;
+  max-width: 300px;
+}
+#otpInput {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}

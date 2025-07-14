@@ -1,0 +1,248 @@
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #e2e1fe;
+    color: #03047d;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#loginForm {
+    width: 320px;
+    margin: 60px auto;
+    padding: 32px 24px;
+    background: #e2e1fe; /* light blue */
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(3,4,125,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#loginForm input[type="email"] {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    background: #f3f3ff; /* very light blue */
+    font-size: 1em;
+    box-shadow: 0 1px 4px rgba(3,4,125,0.08);
+    outline: none;
+    transition: box-shadow 0.2s;
+    color: #03047d;
+}
+
+#loginForm input[type="text"]:focus,
+#loginForm input[type="password"]:focus,
+#loginForm input[type="email"]:focus {
+    box-shadow: 0 2px 8px rgba(3,4,125,0.18);
+    background: #dbe0ff;
+}
+
+#loginForm input::placeholder {
+    color: #03047d;
+    opacity: 0.7;
+}
+
+#loginForm button[type="submit"],
+#signupForm button[type="submit"] {
+    margin-top: 8px;
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    background: #03047d;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(3,4,125,0.15);
+    transition: background 0.2s, transform 0.2s;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+#loginForm button[type="submit"]:hover,
+#signupForm button[type="submit"]:hover {
+    background: #03047d;
+    color: #e2e1fe;
+    transform: scale(1.04);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+    color: #03047d;
+    margin-bottom: 24px;
+}
+
+#otpSection,
+#resetSection {
+    width: 320px;
+    margin: 24px auto;
+    padding: 32px 24px;
+    background: #e2e1fe;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(3,4,125,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#otpSection input[type="text"],
+#resetSection input[type="text"] {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    background: #f3f3ff;
+    font-size: 1em;
+    box-shadow: 0 1px 4px rgba(3,4,125,0.08);
+    outline: none;
+    transition: box-shadow 0.2s;
+    color: #03047d;
+}
+
+#otpSection input[type="text"]:focus,
+#resetSection input[type="text"]:focus {
+    box-shadow: 0 2px 8px rgba(3,4,125,0.18);
+    background: #dbe0ff;
+}
+
+#otpSection button,
+#resetSection button {
+    margin-top: 8px;
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #03047d 0%, #e2e1fe 100%);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(3,4,125,0.15);
+    transition: background 0.2s, transform 0.2s;
+}
+
+#otpSection button:hover,
+#resetSection button:hover {
+    background: linear-gradient(90deg, #e2e1fe 0%, #03047d 100%);
+    color: #e2e1fe;
+    transform: scale(1.04);
+}
+
+/* Home page styling */
+#homeContainer {
+    width: 90%;
+    max-width: 900px;
+    margin: 48px auto;
+    padding: 40px 32px;
+    background: #e2e1fe;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(3,4,125,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+#homeContainer h1 {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 2.8em;
+    color: #03047d;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+#homeContainer p {
+    font-size: 1.2em;
+    color: #03047d;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* Center the backupcodes button */
+#backupcodes {
+    display: block;
+    margin: 24px auto;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 16px;
+    background: #03047d;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(3,4,125,0.12);
+    transition: background 0.2s, transform 0.2s;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+#backupcodes:hover {
+    background: #03047d;
+    color: #e2e1fe;
+    transform: scale(1.04);
+}
+
+/* Make all home page buttons fully blue and center them */
+#homeContainer a, 
+#homeContainer button {
+    display: block;
+    margin: 24px auto;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 16px;
+    background: #03047d;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(3,4,125,0.12);
+    transition: background 0.2s, transform 0.2s;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+#homeContainer a:hover, 
+#homeContainer button:hover {
+    background: #03047d;
+    color: #e2e1fe;
+    transform: scale(1.04);
+}
+
+#actionContainer {
+    width: 320px;
+    margin: 60px auto;
+    padding: 32px 24px;
+    background: #e2e1fe;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(3,4,125,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+}
+
+#actionContainer button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    background: #03047d;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(3,4,125,0.15);
+    transition: background 0.2s, transform 0.2s;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+#actionContainer button:hover {
+    background: #03047d;
+    color: #e2e1fe;
+    transform: scale(1.04);
+}
