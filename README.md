@@ -25,8 +25,3 @@ Open: http://localhost:5173
 
 /home → welcome + settings (backup codes)
 
-r
-Copier le code
-
-Tu peux copier ce fichier dans un `README.md` à la racine de ton projet ✨  
-Si tu veux l’emoji style pro ou un résumé français, dis-moi !
